@@ -27,7 +27,7 @@ app.use(session({
 app.use(express.json());
 
 //DB Connection
-mongoose.connect('mongodb://localhost:27017/Ensi')
+mongoose.connect('mongodb://mongo:27017/Ensi')
 const db = mongoose.connection;
 db.once("open",()=>{
   console.log("Connected to db")
